@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div id="loader">
+  <div class="neon-spinner">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+  <header>
+    <div class="logo neon-text">D-Ventures</div>
+     <div class="hamburger" id="hamburger">
+   
+    &#9776;
+  </div>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html">Contact</a>
+  </nav>
+  </header>
+<section class="home container="home"> 
+<div class="home-content">
+<div class="home-img">
+<img src="img/my .jpg" alt="">
+</div>
+<div class="home-text">
+<h3>Hello</h3>
+<h2>I'm <span class="color">Mohit Kumar</span></h2>
+<p>
+  details of me <span class="color"></span>
+</p>
+
+<div class="social">
+<a href=""><i class="ri ri-facebook-circle-line"></i></a> 
+<a href=""><i class="ri ri-twitter-line"></i></a> 
+<a href=""><i class="ri ri-instagram-line"></i></a> 
+</div>
+</div>
+</div>
+</section> 
+
+   
+
+  <footer>
+    <div class="footer-content">
+      <p class="neon-text">&copy; 2025 D-Ventures</p>
+      <p>Designed and developed by Me. Built with HTML, CSS, and JavaScript.</p>
+      <p>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+        <a href="https://github.com" target="_blank">GitHub</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="1.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      console.log("Page loaded, hiding loader...");
+      if (loader) {
+        loader.style.opacity = "0";
+        loader.style.pointerEvents = "none";
+        setTimeout(() => {
+          loader.style.display = "none";
+        }, 300);
+      }
+    });
+  </script>
+</body>
+</html>

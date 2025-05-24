@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div id="loader">
+  <div class="neon-spinner">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+  <header>
+    <div class="logo neon-text">D-Ventures</div>
+     <div class="hamburger" id="hamburger">
+    &#9776;
+  </div>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="index.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html">Contact</a>
+  </nav>
+  </header>
+
+    <section class="contact container" id="contact">
+      <h2 class="heading">Contact</h2>
+      <form action="" class="contact-form" id="contact-form">
+      <input type="text" placeholder="Your Name" class="name" required>
+      <input type="email" name="" id="" placeholder="Email address..." class="email" required>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." class="message" required></textarea>
+      <input type="submit" value="Send" class="send-btn">
+      </form>
+    </section>
+    <section class="contacts">
+
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p class="neon-text">&copy; 2025 D-Ventures</p>
+      <p>Designed and developed by Me. Built with HTML, CSS, and JavaScript.</p>
+      <p>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+        <a href="https://github.com" target="_blank">GitHub</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "yLX1_y7hISyJfZwJu",
+      });
+   })();
+</script>
+  <script src="1.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      console.log("Page loaded, hiding loader...");
+      if (loader) {
+        loader.style.opacity = "0";
+        loader.style.pointerEvents = "none";
+        setTimeout(() => {
+          loader.style.display = "none";
+        }, 300);
+      }
+    });
+  </script>
+</body>
+</html>
